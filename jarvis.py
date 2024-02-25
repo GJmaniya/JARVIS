@@ -1,5 +1,5 @@
 # this is on type of a jarvsi it you start then first set a password
-
+# use this code install pyaudio pip install pyaudio
 import pyttsx3
 import speech_recognition as sr 
 import requests
