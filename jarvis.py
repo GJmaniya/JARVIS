@@ -44,12 +44,12 @@ def takeCommand():
 
 # password 
 for i in range(3):
-    a = input("Enter the password to open friday: - ") # your virtual assistant password is friday and you can change your virtual assistant password using friday
+    a = input("Enter the password to open  jarvis: - ") # your virtual assistant password is  jarvis and you can change your virtual assistant password using jarvis
     pw_file = open("password.txt", "r")
     pw = pw_file.read()
     pw_file.close()
     if (a==pw):
-        print("Welcom sir ! plz speak [friday] to load me up")
+        print("Welcom sir ! plz speak [jarvis] to load me up")
         break
     elif (i == 2) and (a != pw):
         exit()
@@ -59,9 +59,7 @@ for i in range(3):
 if __name__ == "__main__":
     while True:
         query = takeCommand().lower()
-        if "friday" in query: # you can remove this line as you wish
-            speak("sorry i am not friday, i am a friday so plase tell me a friday")
-        elif "friday" in query: # Here you can change the name of your virtual assistant 
+        elif "jarvis" in query: # Here you can change the name of your virtual assistant 
             greetMe()
             while True:
                 query = takeCommand().lower()
